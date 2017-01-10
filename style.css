@@ -14,10 +14,9 @@ h1 {
 }
 ul {
 	padding: 0;
-	align-items: center;
 	display: flex;	
 	flex-wrap: wrap;
-
+	justify-content: center;
 }
 li{
 	display: flex;
