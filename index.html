@@ -10,19 +10,28 @@
 			</header>
 			<section class="container">	
 				<ul id="listeNombre"></ul>
+				<div id="jsdesac">
+					<p>Le javaScript est désactivé ! Réactivez le pour utiliser le script</p>
+				</div>
 			</section>
 			<script>
+				document.getElementById("jsdesac").style.display = "none";
+
 				var liste = document.getElementById("listeNombre");
-				var nombre = parseInt(prompt("Combien de cases voulez-vous ?(Lettres non autorisées)"));
-				if(nombre > 0){
+				var nombre = parseInt(prompt("Combien de cases voulez-vous ?(Lettres non autorisées et maximum à 1000 cases)"));
+				if(nombre > 0 && nombre <= 1000){
 					for(i = 1; i <= nombre; i++) {
 						var cases = document.createElement("li")
+						if(i % 2 == 0){
+							cases.className = "lijs";
+						}
 						cases.appendChild(document.createTextNode(i));
 						liste.appendChild(cases);
+						//liste.innerHTML += "<li>" + i + "</li>";
 					}
 				}
 				else {
-					alert("Il fallait entrer un nombre !")
+					alert("Il fallait entrer un nombre inferieur à 1001 et superieur à 0!")
 				}
 			</script>		
 		</body>
