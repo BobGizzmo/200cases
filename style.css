@@ -1,0 +1,14 @@
+#container {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFEBCD;
+	align-items: center;
+}
+h1 {
+	color:#B8860B;
+}
+ul li{
+	list-style-type: none;
+	line-height: 30px;
+	font-weight: bold;
+}
