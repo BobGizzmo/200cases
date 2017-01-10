@@ -7,8 +7,15 @@
 h1 {
 	color:#B8860B;
 }
+ul {
+	display: flex;
+}
 ul li{
 	list-style-type: none;
 	line-height: 30px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
 	font-weight: bold;
+	border:1px solid black;
 }
