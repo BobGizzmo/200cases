@@ -7,16 +7,20 @@
 		<body>
 			<div id="container">
 				<h1>MaListe</h1>
-				<ul id="listeNombre">
-				<ul>
+				<ul id="listeNombre"></ul>
 			</div>
 			<script>
 				var liste = document.getElementById("listeNombre");
-				for(i = 0; i <= 200; i++) {
-					
-					var cases = document.createElement("li")
-					cases.appendChild(document.createTextNode(i));
-					liste.appendChild(cases);
+				var nombre = parseInt(prompt("Combien de cases voulez-vous ?(Lettres non autorisées)"));
+				if(nombre > 0){
+					for(i = 1; i <= nombre; i++) {
+						var cases = document.createElement("li")
+						cases.appendChild(document.createTextNode(i));
+						liste.appendChild(cases);
+					}
+				}
+				else {
+					alert("Il fallait entrer un nombre !")
 				}
 			</script>		
 		</body>

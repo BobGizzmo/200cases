@@ -1,3 +1,7 @@
+body {
+	background-color: #FFEBCD;
+
+}
 #container {
 	display: flex;
 	flex-direction: column;
@@ -8,6 +12,8 @@ h1 {
 	color:#B8860B;
 }
 ul {
+	padding: 0;
+	align-items: center;
 	display: flex;	
 	flex-wrap: wrap;
 
@@ -15,9 +21,13 @@ ul {
 ul li{
 	list-style-type: none;
 	line-height: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px;
 	width: 40px;
 	height: 40px;
 	border:1px solid black;
-	text-align: center;
+	border-radius: 5px;
 	font-weight: bold;
 }
