@@ -3,6 +3,7 @@ body {
 
 }
 .container {
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	background-color: #FFEBCD;
